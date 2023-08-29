@@ -2,13 +2,13 @@ import clsx from "clsx";
 import Input from "./Custom/Input";
 import SimpleLoader from "./Custom/SimpleLoader";
 import Selector from "./Custom/Selector";
-import { difficulties, muscles, types } from "./consts";
+import { difficulties, muscles, types } from "../consts";
 
 const Form = (props: {
   handleSubmit: Function;
   fetchParams: any;
   setFetchParams: any;
-  isLoading: boolean;
+  isLoading?: boolean;
   isSubmitDisabled: boolean;
 }) => {
   const {
